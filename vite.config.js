@@ -17,4 +17,16 @@ export default defineConfig({
             },
         }),
     ],
+    build: {
+        // sourcemap: true,
+        emptyOutDir: true,
+        outDir: "./public/assets",
+        rollupOptions: {
+            output: {
+                entryFileNames: "[name].js",
+                chunkFileNames: "[name].js",
+                assetFileNames: "[name].[ext]",
+            },
+        },
+    },
 });

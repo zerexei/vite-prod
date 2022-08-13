@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    @vite(['resources/js/app.js'])
+    {{-- @vite(['resources/js/app.js']) --}}
+    <script type="module" src="{{asset('assets/app.js')}}"></script>
+    <script type="module" src="{{asset('assets/app2.js')}}"></script>
+    {{-- <script type="module" src="{{asset('assets/app.js')}}"></script> --}}
 </head>
 
 <body>
